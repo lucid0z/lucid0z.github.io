@@ -32,18 +32,19 @@ function numberGuess(){
     if(text.value != ''){
         hint.style.visibility = 'visible';
         console.log('Guessed number: ' + text.value);
-        if(text.value === num){
+        console.log(num);
+        if(text.value === num.toString()){
             hint.innerText = 'You guessed correctly! It was ' + num + ', guessed in ' + tries + ' guesses.';
             
         } else if (text.value < num){
             hints--;
             tries++;
-            hint.innerText = 'You guessed lower! ' + hints + ' guesses left.';
+            hint.innerText = 'You guessed too low! ' + hints + ' guesses left.';
 
         } else if (text.value > num){
             hints--;
             tries++;
-            hint.innerText = 'You guessed higher! ' + hints + ' guesses left.'; 
+            hint.innerText = 'You guessed too high! ' + hints + ' guesses left.'; 
         } 
         if(hints == 0){
             hint.innerText = 'You ran out of guesses! It was '+ num +'!';
