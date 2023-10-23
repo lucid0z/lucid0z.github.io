@@ -14,7 +14,7 @@ body{
 }
 
 .wrapper{
-    width: 35em;
+    width: 75vw;
     height: 25em;
     background-color: #fff;
     border-radius: 0.2em;
@@ -60,3 +60,11 @@ input{
 #guess-hint{
     visibility: hidden;
 }
+
+.sec{
+    height: 300EM;
+
+    background-color: red;
+}
+
+/* a */
