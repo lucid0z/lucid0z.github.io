@@ -10,7 +10,6 @@ let tries = 1;
 btn.onclick = function(){
     if(hints===0){
         startGuess();
-        console.log("Started game");
         
     } else{
         
@@ -34,7 +33,7 @@ function numberGuess(){
     if(text.value != ''){
         hint.style.visibility = 'visible';
         console.log('Guessed number: ' + text.value);
-        console.log(num);
+        console.log(num + " is the real number");
         if(text.value === num.toString()){
             hint.innerText = 'You guessed correctly! It was ' + num + ', guessed in ' + tries + ' guesses.';
             
