@@ -21,6 +21,7 @@ function startGuess(){
 num = Math.floor(Math.random() * 100);
     text.value = '';
     hints=5;
+    tries=0;
     hint.style.visibility = 'hidden';
 
 btn.innerText = 'Guess';
