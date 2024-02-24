@@ -10,6 +10,7 @@ let tries = 1;
 btn.onclick = function(){
     if(hints===0){
         startGuess();
+        console.log("Started game");
         
     } else{
         
